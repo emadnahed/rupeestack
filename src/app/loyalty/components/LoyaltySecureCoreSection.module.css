@@ -1,0 +1,147 @@
+.secureCoreSection {
+  color: var(--text-primary, #fff);
+  background: var(--primary-black, #000);
+  padding: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.headlineBlock {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.headline {
+  font-family: var(--font-gilroy), sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin: 0;
+  color: var(--text-primary, #fff);
+}
+
+.bold {
+  font-family: var(--font-gilroy), sans-serif;
+  font-weight: 700;
+  color: var(--text-primary, #fff);
+}
+
+.serifItalic {
+  font-family: var(--font-albra), serif;
+  font-style: italic;
+  font-weight: 700;
+  color: var(--text-primary, #fff);
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1400px;
+  gap: 2rem;
+}
+
+.left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.laptopImg {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 8px 32px rgba(0,0,0,0.5));
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.payoutBlock {
+  margin-top: 1.5rem;
+}
+
+.payoutHeadline {
+  font-size: 1.8rem;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+.payoutBold {
+  font-family: var(--font-gilroy), sans-serif;
+  font-weight: 700;
+  color: var(--text-primary, #fff);
+}
+
+.payoutItalic {
+  font-family: var(--font-albra), serif;
+  font-style: italic;
+  font-weight: 700;
+  color: var(--text-primary, #fff);
+}
+
+.payoutSubtext {
+  font-size: 1rem;
+  color: var(--text-secondary, rgba(255, 255, 255, 0.85));
+  font-family: var(--font-gilroy), sans-serif;
+  margin-top: 0.5rem;
+}
+
+.italic {
+  font-style: italic;
+}
+
+@media (min-width: 900px) {
+  .secureCoreSection {
+    padding: 6rem 1rem 4rem 1rem;
+  }
+  .headlineBlock {
+    margin-bottom: 5.5rem;
+  }
+  .headline {
+    font-size: 4rem;
+    line-height: 4.5rem;
+  }
+  .inner {
+    flex-direction: row;
+    gap: 0;
+  }
+  .left {
+    justify-content: flex-start;
+  }
+  .laptopImg {
+    width: 600px;
+    max-width: none;
+    margin-left: -120px;
+  }
+  .right {
+    align-items: flex-end;
+    text-align: right;
+    padding-left: 2rem;
+  }
+  .payoutBlock {
+    margin-top: 0;
+  }
+  .payoutHeadline {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .payoutSubtext {
+    font-size: 1.15rem;
+  }
+}

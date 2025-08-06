@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 180px 0 92px;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  -webkit-scroll-snap-align: start;
+  -webkit-scroll-snap-stop: always;
+  background-color: #000;
+}
+
+.qrImage {
+  max-width: 380px; /* Further reduced from 700px */
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  padding: 0 20px;
+}

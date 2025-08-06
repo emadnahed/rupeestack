@@ -1,0 +1,75 @@
+.heroTextSection {
+  width: 100%;
+  background: var(--primary-black, #000);
+  color: var(--text-primary, #fff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  padding: 4rem 1rem 2rem 1rem;
+}
+
+.heroTextContainer {
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.topLine {
+  font-family: var(--font-gilroy), sans-serif;
+  font-size: 2.1rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 0 1.2rem 0;
+  line-height: 1.3;
+  color: var(--text-primary, #fff);
+}
+
+.serifItalic {
+  font-family: var(--font-albra), serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 2.2rem;
+  letter-spacing: 0.01em;
+  color: var(--text-primary, #fff);
+}
+
+.bottomLine {
+  font-family: var(--font-gilroy), sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+  line-height: 1.3;
+  color: var(--text-secondary, rgba(255, 255, 255, 0.85));
+}
+
+@media (max-width: 900px) {
+  .topLine, .serifItalic, .bottomLine {
+    font-size: 1.3rem;
+  }
+  .serifItalic {
+    font-size: 1.35rem;
+  }
+  .bottomLine {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .heroTextSection {
+    padding: 2rem 0.5rem 1.5rem 0.5rem;
+  }
+  .topLine, .serifItalic, .bottomLine {
+    font-size: 1.05rem;
+  }
+  .serifItalic {
+    font-size: 1.1rem;
+  }
+  .bottomLine {
+    font-size: 1rem;
+  }
+} 

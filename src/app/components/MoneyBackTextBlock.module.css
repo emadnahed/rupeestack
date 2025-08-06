@@ -1,0 +1,55 @@
+.textBlock {
+  color: #fff;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  position: relative;
+  z-index: 2;
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 400; /* Medium weight is typically 500, but using 400 as specified */
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: 0px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.textBlock p {
+  margin: 0 0 20px 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+}
+
+/* Remove italic style since all text should be the same */
+.italic {
+  font-style: normal;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .textBlock {
+    padding: 60px 20px;
+    max-width: 100%;
+  }
+  
+  .textBlock p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .textBlock {
+    max-width: 650px;
+    padding: 100px 20px;
+  }
+  
+  .textBlock p {
+    font-size: 1.75rem;
+    line-height: 1.4;
+  }
+} 

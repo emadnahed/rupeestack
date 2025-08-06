@@ -1,0 +1,125 @@
+.experiencesSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  background-color: #000;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.title {
+  margin: 0;
+  text-align: center;
+  line-height: 1.1;
+  font-size: 2.25rem; /* 36px */
+  font-family: var(--font-gilroy), sans-serif;
+  color: #FFFFFF;
+}
+
+.titleItalic {
+  font-family: var(--font-gilroy), sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  color: #FFFFFF;
+}
+
+.titleBold {
+  font-family: var(--font-gilroy), sans-serif;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.phonesContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-direction: column;
+  width: 100%;
+}
+
+.phoneWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 120px;
+  aspect-ratio: 1 / 2; /* Maintains phone proportions */
+}
+
+.descriptionWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.description {
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-family: 'gilroy', sans-serif;
+  font-weight: 400;
+}
+
+.descriptionItalicBold {
+  font-style: italic;
+  font-weight: 700;
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) {
+  .container {
+    gap: 3rem;
+  }
+  .title {
+    font-size: 3rem;
+  }
+  .phonesContainer {
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .phoneWrapper {
+    max-width: 280px;
+    aspect-ratio: 1 / 2;
+  }
+  .descriptionWrapper {
+    margin-top: 3.5rem;
+  }
+  .description {
+    font-size: 1.1rem;
+  }
+}
+
+/* Desktop adjustments */
+@media (min-width: 1024px) {
+  .container {
+    gap: 4rem;
+  }
+  .title {
+    font-size: 3.75rem; /* 60px */
+  }
+  .phonesContainer {
+    gap: 4rem;
+  }
+  .phoneWrapper {
+    max-width: 300px;
+    aspect-ratio: 1 / 2;
+  }
+  .description {
+    font-size: 1.15rem;
+  }
+}
+

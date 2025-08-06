@@ -1,0 +1,52 @@
+.section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #000;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pill1, .pill2, .pill3 {
+  position: absolute;
+  z-index: 1;
+  transform: translate(-50%, -50%); /* Center based on element's own size */
+}
+
+.pill1 {
+  top: 10%;
+  left: 30%;
+}
+
+.pill2 {
+  top: 40%;
+  right: 10%;
+}
+
+.pill3 {
+  bottom: 10%;
+  left: 30%;
+}
+
+@media (max-width: 1200px) {
+  .pill1 { left: 25%; top: 8%; }
+  .pill2 { right: 5%; top: 35%; }
+  .pill3 { left: 25%; bottom: 8%; }
+}
+
+@media (max-width: 992px) {
+  .pill1, .pill2, .pill3 {
+    transform: scale(0.9) translate(-50%, -50%);
+  }
+  .pill1 { top: 8%; left: 20%;}
+  .pill2 { top: 30%; right: 0%;}
+  .pill3 { bottom: 8%; left: 20%;}
+}
+
+@media (max-width: 768px) {
+  .pill1, .pill2, .pill3 {
+    display: none; /* Hide pills on mobile for cleaner text-focused view */
+  }
+} 

@@ -1,0 +1,290 @@
+.card {
+  position: relative;
+  width: 95%;
+  height: 90%;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 40px;
+  justify-content: center;
+  padding: 40px;
+  color: #fff;
+  margin: 29vh 20px 0 20px;
+  border-radius: 15px;
+  overflow: hidden;
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1000px;
+  gap: 50px;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.text {
+  flex: 0 0 50%;
+  max-width: 450px;
+}
+
+.title {
+  margin-bottom: 18px;
+}
+
+.titleLine {
+  font-size: 54px;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+  margin-bottom: 2px;
+}
+
+.gilroyText {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 700;
+}
+
+.albraItalic {
+  font-family: 'Albra';
+  font-weight: 400;
+  font-style: italic;
+  font-size: 55px;
+  line-height: 58px;
+  letter-spacing: 0px;
+
+}
+
+.subtitle {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: -0.2px;
+  color: #fff;
+  opacity: 0.95;
+}
+
+.paragraphLine {
+  margin-bottom: 0;
+}
+
+.highlight {
+  font-family: 'Albra';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 29px;
+  letter-spacing: -0.2px;
+  color: #fff;
+  opacity: 0.95;
+  display: inline;
+}
+
+.imageWrapper {
+  flex: 0 0 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.image {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Responsive styles */
+
+@media (max-width: 1300px) {
+  .card {
+    max-width: 1100px;
+    height: 590px;
+    padding: 25px 30px;
+  }
+
+  .content {
+    max-width: 900px;
+    gap: 40px;
+  }
+
+  .text {
+    flex: 0 0 55%;
+    max-width: 400px;
+  }
+
+  .titleLine {
+    font-size: 48px;
+    line-height: 42px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+    line-height: 19px;
+  }
+
+  .imageWrapper {
+    flex: 0 0 45%;
+  }
+
+  .image {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .card {
+    max-width: 1000px;
+    height: 350px;
+    padding: 25px 30px;
+  }
+
+  .content {
+    max-width: 900px;
+    gap: 40px;
+  }
+
+  .text {
+    flex: 0 0 55%;
+    max-width: 400px;
+  }
+
+  .titleLine {
+    font-size: 38px;
+    line-height: 42px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .imageWrapper {
+    flex: 0 0 45%;
+  }
+
+  .image {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    height: 100vh;
+    padding: 10vh 24px;
+    margin: 0;
+    border-radius: 0;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content {
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+    width: 100%;
+  }
+
+  .reverse {
+    flex-direction: column;
+  }
+
+  .text {
+    width: 100%;
+    max-width: 500px;
+    text-align: left;
+  }
+
+  .titleLine {
+    font-size: 38px;
+    line-height: 1.15;
+    margin-bottom: 1rem;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    line-height: 1.5;
+    opacity: 0.85;
+  }
+
+  .imageWrapper {
+    width: 100%;
+    text-align: center;
+    margin-top: auto;
+  }
+
+  .image {
+    max-width: 260px;
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 8vh 10px;
+    margin: 130px 0px;
+    height: 60%;
+    width: 100%;
+    border-radius: 15px;
+  }
+
+  .titleLine {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .subtitle {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .image {
+    max-width: 245%;
+  }
+}
+
+@media (max-width: 380px) {
+  .card {
+    padding: 4vh 10px;
+    margin: 130px 0px;
+    height: 60%;
+    width: 100%;
+    border-radius: 15px;
+  }
+
+  .titleLine {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .subtitle {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .image {
+    max-width: 35%;
+  }
+  .gilroyText {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+  }
+  
+  .albraItalic {
+    font-family: 'Albra';
+    font-weight: 400;
+    font-style: italic;
+    font-size: 25px;
+    line-height: 8px;
+    letter-spacing: 0px;
+  
+  }
+}

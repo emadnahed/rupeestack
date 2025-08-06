@@ -1,0 +1,213 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 40px;
+
+  /* Scroll snap alignment */
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+.particlesWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 5rem;
+  line-height: 1.1;
+  margin-bottom: 40px;
+  letter-spacing: -0.02em;
+}
+
+.gilroyBold {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 700;
+}
+
+.albraItalic {
+  font-family: 'Albra', sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 89px;
+  line-height: 90px;
+  letter-spacing: -4px;
+  text-align: center;
+  font-feature-settings: 'ss01' on, 'ss02' on;
+  font-variation-settings: 'wght' 600, 'ital' 1;
+}
+
+.albraMediumItalic {
+  font-family: 'Albra Medium';
+  font-weight: 700;
+  font-style: italic;
+  font-size: 21px;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.subtitleWrapper {
+  width: 904px;
+  height: 87px;
+  margin-bottom: 40px;
+}
+
+.subtitle {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: -1px;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.cta {
+  min-width: 252px;
+  height: 55px;
+  padding: 0 34px;
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  border-radius: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  vertical-align: middle;
+  line-height: 1;
+  font-size: 0; /* Remove white space between inline elements */
+}
+
+.gilroyText {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 18px;
+  font-weight: 500; /* Medium weight */
+  line-height: 1;
+  letter-spacing: -0.5px;
+  white-space: nowrap;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  top: -1px; /* Fine-tune vertical position */
+}
+
+.albraSemiItalic {
+  font-family: 'Albra', sans-serif;
+  font-weight: 600; /* Semi Bold */
+  font-style: italic;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: -0.5px;
+  white-space: nowrap;
+  font-feature-settings: 'ss01' on, 'ss02' on;
+  font-variation-settings: 'wght' 600, 'ital' 1;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  top: -1px; /* Fine-tune vertical position */
+}
+
+.cta:hover, .cta:focus {
+  background: #fff;
+  color: #000;
+  outline: none;
+}
+
+@media (max-width: 1024px) {
+  .subtitleWrapper {
+    width: 100%;
+    height: auto;
+    max-width: 904px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 150px 0px 300px 0px;
+  }
+
+  .title {
+    font-size: 3.5rem;
+  }
+
+  .subtitle {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .cta {
+    width: auto;
+    height: auto;
+    padding: 12px 28px;
+  }
+
+  .gilroyText,
+  .albraSemiItalic {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 50px 0px 100px 0px;
+  }
+
+  .title {
+    font-size: 2.0rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+    line-height: 18px;
+  }
+
+  .albraItalic {
+    font-family: 'Albra', sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 2.5rem;
+    line-height: 50px;
+    letter-spacing: -4px;
+    text-align: center;
+    font-feature-settings: 'ss01' on, 'ss02' on;
+    font-variation-settings: 'wght' 600, 'ital' 1;
+  }
+  .gilroyBold {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    font-size: 2.1rem;
+  }
+}

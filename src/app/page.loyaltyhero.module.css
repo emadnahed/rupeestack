@@ -1,0 +1,55 @@
+.previewContainer {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-black, #000);
+  min-height: 100vh;
+}
+
+.sectionsContainer {
+  display: flex;
+  flex-direction: column;
+  background: var(--primary-black, #000);
+  min-height: 100vh;
+}
+
+/* Ensure both sections have equivalent sizing and proper layout */
+.sectionsContainer > * {
+  flex: 1;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+/* Desktop layout - maintain vertical stacking but ensure proper internal layout */
+@media (min-width: 1024px) {
+  .sectionsContainer {
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .sectionsContainer > * {
+    flex: 1;
+    min-height: 50vh;
+    width: 100%;
+    padding: 3rem 5%;
+  }
+}
+
+/* Tablet layout */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .sectionsContainer > * {
+    min-height: 50vh;
+    padding: 2rem 3%;
+  }
+}
+
+/* Mobile layout */
+@media (max-width: 767px) {
+  .sectionsContainer > * {
+    min-height: 60vh;
+    padding: 2rem 1rem;
+  }
+}

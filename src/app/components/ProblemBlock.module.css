@@ -1,0 +1,107 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 64px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 64px 0;
+}
+
+.inverse {
+  flex-direction: row-reverse;
+}
+
+.textBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1 1 0%;
+  min-width: 320px;
+}
+
+.problemNumber {
+  font-family: 'Albra', serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.8px;
+  margin-bottom: 24px;
+  margin-left: 0;
+  text-align: left;
+}
+
+.italic {
+  font-family: 'Albra', serif;
+  font-style: italic;
+  font-weight: 500;
+  letter-spacing: -0.8px;
+}
+
+
+.titleLine {
+  font-family: 'Gilroy-Medium', sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 52px;
+  letter-spacing: -0.8px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+
+.highlight {
+  font-family: 'Albra', serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 55px;
+  line-height: 52px;
+  letter-spacing: -0.8px;
+  margin-left: 4px;
+}
+
+.description {
+  font-family: 'Gilroy-Medium', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.8px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.imageBlock {
+  flex: 1 1 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 320px;
+}
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    gap: 32px;
+    padding: 32px 0;
+  }
+  .inverse {
+    flex-direction: column;
+  }
+  .imageBlock, .textBlock {
+    min-width: 0;
+    width: 100%;
+  }
+  .titleLine {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .highlight {
+    font-size: 32px;
+    line-height: 38px;
+  }
+}

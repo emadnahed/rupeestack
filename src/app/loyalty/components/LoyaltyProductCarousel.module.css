@@ -1,0 +1,143 @@
+.carouselSection {
+  width: 100%;
+  background: var(--primary-black, #000);
+  color: var(--text-primary, #fff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0 4rem 0;
+}
+
+.carouselContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1100px;
+  position: relative;
+}
+
+.arrowLeft, .arrowRight {
+  background: none;
+  border: 2px solid var(--text-primary, #fff);
+  color: var(--text-primary, #fff);
+  font-size: 2.5rem;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  transition: all 0.2s ease;
+  font-family: var(--font-gilroy), sans-serif;
+}
+.arrowLeft:hover, .arrowRight:hover {
+  background: rgba(255,255,255,0.08);
+  border-color: var(--loyalty-accent-hover, #b3e5fc);
+  color: var(--loyalty-accent-hover, #b3e5fc);
+}
+.arrowLeft {
+  margin-right: 1.5rem;
+}
+.arrowRight {
+  margin-left: 1.5rem;
+}
+
+.leftBlock, .rightBlock {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  max-width: 260px;
+  text-align: center;
+  margin: 0 1rem;
+}
+
+.logo {
+  margin-bottom: 1.2rem;
+  max-width: 120px;
+  height: auto;
+}
+
+.leftDesc, .rightDesc {
+  font-family: var(--font-gilroy), sans-serif;
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+  color: var(--text-secondary, rgba(255, 255, 255, 0.92));
+  line-height: 1.5;
+}
+
+.learnMore {
+  font-family: var(--font-gilroy), sans-serif;
+  font-size: 1.1rem;
+  color: var(--text-primary, #fff);
+  text-decoration: underline;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  transition: color 0.2s ease;
+  font-weight: 500;
+}
+.learnMore:hover, .learnMore:focus {
+  color: var(--loyalty-accent-hover, #b3e5fc);
+}
+
+.centerBlock {
+  flex: 0 0 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+}
+
+.personImg {
+  width: 220px;
+  height: auto;
+  max-height: 420px;
+  object-fit: contain;
+  filter: grayscale(1);
+}
+
+@media (max-width: 900px) {
+  .carouselContainer {
+    flex-direction: column;
+    max-width: 98vw;
+    padding: 0 0.5rem;
+  }
+  .arrowLeft, .arrowRight {
+    margin: 0 0 1.5rem 0;
+    font-size: 2rem;
+    width: 40px;
+    height: 40px;
+  }
+  .leftBlock, .rightBlock {
+    max-width: 100%;
+    margin: 0.5rem 0;
+  }
+  .centerBlock {
+    flex: none;
+    margin: 1.5rem 0;
+  }
+  .personImg {
+    width: 140px;
+    max-height: 260px;
+  }
+}
+
+@media (max-width: 600px) {
+  .carouselSection {
+    padding: 2rem 0 2rem 0;
+  }
+  .leftDesc, .rightDesc, .learnMore {
+    font-size: 0.95rem;
+  }
+  .personImg {
+    width: 90px;
+    max-height: 160px;
+  }
+} 

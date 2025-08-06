@@ -1,0 +1,170 @@
+.payAppSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-primary, #fff);
+  padding: 2rem 1rem;
+  gap: 2rem;
+  text-align: center;
+  width: 100%;
+  min-height: 100vh;
+  font-family: var(--font-gilroy), sans-serif;
+  background: var(--primary-black, #000);
+  box-sizing: border-box;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.mockupContainer {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 180px;
+  width: 100%;
+  aspect-ratio: 9 / 19.5; /* iPhone 14 Pro proportions */
+  margin: 0 auto;
+}
+
+.textContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 600px;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.headline {
+  font-size: 2.25rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--text-primary, #fff);
+}
+
+.headline em {
+  font-family: var(--font-albra), serif;
+  font-style: italic;
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.headline strong {
+  font-weight: 800;
+}
+
+.subheadline {
+  font-size: 1rem;
+  color: var(--text-secondary, rgba(255, 255, 255, 0.85));
+  margin-top: 0;
+  line-height: 1.6;
+  font-family: var(--font-gilroy), sans-serif;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.subheadline .italic {
+  font-family: var(--font-albra), serif;
+  font-style: italic;
+}
+
+.subheadline .bold {
+  font-weight: 700;
+  color: var(--text-primary, #fff);
+}
+
+@media (min-width: 768px) {
+  .payAppSection {
+    flex-direction: row;
+    gap: 3rem;
+    text-align: left;
+    padding: 2rem;
+    align-items: center;
+  }
+  
+  .textContainer {
+    text-align: left;
+    order: 2;
+    flex: 1;
+    max-width: none;
+    padding: 0;
+  }
+  
+  .mockupContainer {
+    order: 1;
+    flex: 0 0 auto;
+    max-width: 320px;
+    margin: 0;
+  }
+  
+  .headline {
+    font-size: 2.75rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .headline em {
+    font-size: 2.75rem;
+  }
+  
+  .subheadline {
+    font-size: 1.125rem;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 480px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .payAppSection {
+    gap: 4rem;
+    padding: 3rem;
+  }
+  
+  .headline {
+    font-size: 3.25rem;
+    margin-bottom: 2rem;
+  }
+  
+  .headline em {
+    font-size: 3.25rem;
+  }
+  
+  .subheadline {
+    font-size: 1.25rem;
+    max-width: 520px;
+  }
+  
+  .mockupContainer {
+    max-width: 380px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .payAppSection {
+    gap: 6rem;
+    padding: 4rem;
+  }
+  
+  .headline {
+    font-size: 3.75rem;
+  }
+  
+  .headline em {
+    font-size: 3.75rem;
+  }
+  
+  .subheadline {
+    font-size: 1.375rem;
+  }
+  
+  .mockupContainer {
+    max-width: 420px;
+  }
+}

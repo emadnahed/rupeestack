@@ -1,0 +1,40 @@
+/*
+Add to your global CSS (e.g. styles/globals.css or _app.tsx):
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Playfair+Display:ital,wght@0,400;1,700&display=swap');
+*/
+
+.normalSection {
+  width: 100%;
+  color: var(--text-primary, #fff);
+  background: var(--primary-black, #000);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 1rem;
+}
+
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 900px;
+}
+
+.normalImage {
+  width: 100%;
+  height: auto;
+  max-width: 700px;
+}
+
+@media (max-width: 900px) {
+  .normalSection {
+    padding: 2.5rem 0.5rem;
+  }
+  .imageWrapper {
+    max-width: 100%;
+  }
+  .normalImage {
+    max-width: 95vw;
+  }
+}

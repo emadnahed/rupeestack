@@ -1,0 +1,174 @@
+.footer {
+  background: #000;
+  color: #fff;
+  padding: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: end;
+  scroll-snap-stop: always;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.logoSection {
+  flex: 1 1 200px;
+  min-width: 200px;
+}
+
+.logo {
+  font-size: 2.5rem;
+  line-height: 1;
+  color: #fff;
+  letter-spacing: -0.01em;
+}
+
+.companySection {
+  flex: 1 1 200px;
+  min-width: 200px;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  margin: 0 0 32px 0;
+  color: #fff;
+  font-weight: 500;
+}
+
+.linkList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.125rem;
+  line-height: 1.4;
+  transition: color 0.2s ease;
+}
+
+.link:hover {
+  color: #b3e5fc;
+  text-decoration: underline;
+}
+
+.contactSection {
+  flex: 2 1 300px;
+  min-width: 300px;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contactItem {
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: #fff;
+}
+
+/* QR Code Section */
+.qrCodeSection {
+  display: none !important;
+}
+
+.copyrightSection {
+  border-top: 1px solid #222;
+  margin-top: 60px;
+  padding: 32px 0;
+  width: 100%;
+  background: #000;
+}
+
+.copyrightContainer {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+  text-align: center;
+}
+
+.copyrightContainer span {
+  font-size: 0.875rem;
+  color: #fff;
+  line-height: 1.4;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .logoSection,
+  .companySection,
+  .contactSection,
+  .qrCodeSection {
+    flex-basis: auto;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .linkList {
+    align-items: center;
+  }
+  
+  .contactInfo {
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 60px 20px;
+    min-height: auto;
+  }
+  
+  .container {
+    padding: 0;
+  }
+  
+  .sectionTitle {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 40px 15px;
+  }
+  
+  .logo {
+    font-size: 2rem;
+  }
+} 

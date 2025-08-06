@@ -1,0 +1,29 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  -webkit-scroll-snap-align: start;
+  -webkit-scroll-snap-stop: always;
+  background-color: #000;
+  overflow: hidden;
+}
+
+/* Ensure the QRBanner takes up remaining space above the footer */
+.container > :first-child {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Ensure the footer stays at the bottom */
+.container > :last-child {
+  width: 100%;
+}

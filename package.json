@@ -1,25 +1,43 @@
 {
-  "name": "rupeestack",
+  "name": "217eb2b5f476e2280d84eef52963a681887c78f9a177b780225aee72b3d1a685",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "preview": "next start"
   },
   "dependencies": {
+    "@kombai/react-error-boundary": "^1.1.0",
+    "date-fns": "^4.1.0",
+    "next": "15.4.5",
     "react": "19.1.0",
-    "react-dom": "19.1.0",
-    "next": "15.4.5"
+    "react-dom": "19.1.0"
   },
   "devDependencies": {
+    "@types/node": "^20.19.9",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "comment-json": "^4.2.5",
+    "env-cmd": "^10.1.0",
+    "ts-morph": "^26.0.0",
     "typescript": "^5",
+    "webpack": "^5.101.0"
+  },
+  "type": "module",
+  "strictDependencies": {
+    "next": "15.4.5",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-swipeable": "^7.0.2",
+    "@eslint/eslintrc": "^3",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.4.5",
-    "@eslint/eslintrc": "^3"
+    "typescript": "^5"
   }
 }
