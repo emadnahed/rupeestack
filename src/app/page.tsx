@@ -19,8 +19,7 @@ export default function Home() {
       <LoyaltyExperiencesSection />
       <LoyaltyPayAppSection />
       <LoyaltyMoneyBackSection />
-      <LoyaltySecureCoreSection />
-      <HeroTextBlock />
+      <LoyaltySecureCoreSection />      
       <LoyaltyProductCarousel />
       <Footer />
     </div>

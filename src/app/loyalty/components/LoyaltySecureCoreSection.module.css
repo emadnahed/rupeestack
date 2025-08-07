@@ -1,11 +1,90 @@
+.GilroyBold400 {
+  font-family: var(--font-gilroy-bold), sans-serif;
+  font-weight: '400';
+  font-size: 60px;
+  line-height: 66px;
+  letter-spacing: -4px;
+  text-align: center;
+}
+
+.Albra600SemiItalic {
+  font-family: var(--font-albra), sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 52px;
+  line-height: 66px;
+  letter-spacing: -4px;
+  text-align: center;
+}
+
+.GilroyBold55 {
+  font-family: var(--font-Gilroy-Bold), sans-serif;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 49px;
+  letter-spacing: 0px;
+  text-align: center;
+
+}
+
+.AlbraMediumItalic55 {
+  /* font-family: var(--font-Albra-Medium), sans-serif; */
+  font-family: 'Albra-Medium';
+  font-weight: 600;
+  font-style: italic;
+  font-size: 55px;
+  line-height: 49px;
+  letter-spacing: -0.8;
+}
+
+.AlbraMediumItaliconehalfrem {
+  /* font-family: var(--font-Albra-Medium), sans-serif; */
+  font-family: 'Albra-Medium';
+  font-weight: 600;
+  font-style: italic;
+  font-size: 1.5rem;
+  /* line-height: 49px; */
+  letter-spacing: -0.8;
+  color: rgba(255, 255, 255, 1);
+
+}
+
+.AlbraMediumItalic21 {
+  font-family: var(--font-albra), sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 21px;
+  line-height: 29px;
+  letter-spacing: 0;
+}
+
+.GilroyRegular36 {
+  font-family: var(--font-gilroy), sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 49px;
+  letter-spacing: -2px;
+  text-align: center;
+}
+
+.AlbraMediumItalic36 {
+  font-family: var(--font-albra), sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 36px;
+  line-height: 49px;
+  letter-spacing: -2px;
+  text-align: center;
+}
+
 .secureCoreSection {
   color: var(--text-primary, #fff);
   background: var(--primary-black, #000);
-  padding: 4rem 1rem;
-  display: flex;
-  flex-direction: column;
+  padding: 1rem 1rem;
+  display: flex;  
+  flex-direction: column;  
   align-items: center;
-  text-align: center;
+  text-align: center;  
 }
 
 .headlineBlock {
@@ -80,6 +159,7 @@
   font-size: 1.8rem;
   line-height: 1.1;
   margin-bottom: 1rem;
+  text-align: left;
 }
 
 .payoutBold {
@@ -100,11 +180,92 @@
   color: var(--text-secondary, rgba(255, 255, 255, 0.85));
   font-family: var(--font-gilroy), sans-serif;
   margin-top: 0.5rem;
+  text-align: left;
 }
 
 .italic {
   font-style: italic;
 }
+
+
+.heroTextSection {
+  width: 100%;
+  background: var(--primary-black, #000);
+  color: var(--text-primary, #fff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  padding: 4rem 1rem 2rem 1rem;
+}
+
+.heroTextContainer {
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2.9rem;
+  /* margin: 49px 0px; */
+}
+
+.topLine {
+  font-family: var(--font-gilroy), sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 0 1.2rem 0;
+  line-height: 1.3;
+  color: rgba(255, 255, 255, 0.54);
+}
+
+.serifItalic {
+  font-family: var(--font-albra), serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 0.01em;
+  color: var(--text-primary, #fff);
+}
+
+.bottomLine {
+  font-family: var(--font-gilroy), sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+  line-height: 1.3;
+  color: rgba(255, 255, 255, 0.54);
+}
+
+@media (max-width: 900px) {
+  .topLine, .serifItalic, .bottomLine {
+    font-size: 1.3rem;
+  }
+  .serifItalic {
+    font-size: 1.35rem;
+  }
+  .bottomLine {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .heroTextSection {
+    padding: 2rem 0.5rem 1.5rem 0.5rem;
+  }
+  .topLine, .serifItalic, .bottomLine {
+    font-size: 1.05rem;
+  }
+  .serifItalic {
+    font-size: 1.1rem;
+  }
+  .bottomLine {
+    font-size: 1rem;
+  }
+} 
+
 
 @media (min-width: 900px) {
   .secureCoreSection {
@@ -145,3 +306,5 @@
     font-size: 1.15rem;
   }
 }
+
+

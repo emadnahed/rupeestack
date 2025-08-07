@@ -8,7 +8,7 @@ import LoyaltyPayAppSection from './components/LoyaltyPayAppSection';
 import LoyaltyMoneyBackSection from './components/LoyaltyMoneyBackSection';
 import { LoyaltySecureCoreSection } from './components/LoyaltySecureCoreSection';
 import LoyaltyNormalSection from './components/LoyaltyNormalSection';
-import HeroTextBlock from './components/HeroTextBlock';
+
 import LoyaltyProductCarousel from './components/LoyaltyProductCarousel';
 
 export default function Loyalty() {
@@ -20,8 +20,7 @@ export default function Loyalty() {
       <LoyaltyExperiencesSection />
       <LoyaltyPayAppSection />
       <LoyaltyMoneyBackSection />
-      <LoyaltySecureCoreSection />
-      <HeroTextBlock />
+      <LoyaltySecureCoreSection />      
       <LoyaltyProductCarousel />
       <Footer />
     </div>
