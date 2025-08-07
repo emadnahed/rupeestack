@@ -61,7 +61,7 @@
 
 .subheadline {
   font-size: 1rem;
-  color: var(--text-secondary, rgba(255, 255, 255, 0.85));
+  color: var(--text-secondary, rgba(255, 255, 255, 0.45));
   margin-top: 0;
   line-height: 1.6;
   font-family: var(--font-gilroy), sans-serif;
@@ -73,6 +73,7 @@
 .subheadline .italic {
   font-family: var(--font-albra), serif;
   font-style: italic;
+  color: rgba(255, 255, 255, 1);
 }
 
 .subheadline .bold {
