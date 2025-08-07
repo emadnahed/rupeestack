@@ -169,3 +169,9 @@
     max-width: 420px;
   }
 }
+
+@media (max-width: 767px) {
+  .payAppSection {
+    margin-bottom: 9rem;
+  }
+}

@@ -1,32 +1,23 @@
 import React from 'react';
-import Image from 'next/image';
 import styles from './LoyaltyMoneyBackSection.module.css';
+import PhoneImage from '../../components/PhoneImage';
 
 const LoyaltyMoneyBackSection: React.FC = () => {
   return (
     <section className={styles.moneyBackSection}>
-      <div className={styles.textBlock}>
-        <div className={styles.headingBlock}>
-          <span className={styles.seamless}>That money</span>
-          <span className={styles.payouts}>back feeling.</span>
-        </div>
-        <p className={styles.subtext}>
-          Smart platform that rewards customers with cashback for shopping at partnered stores.
-        </p>
-        <p className={styles.bottomText}>
-          Join thousands of Indians who've already discovered the secret to making their money work smarter with{' '}
-          <span className={styles.rupeestackText}>
-            RupeeStack.
-          </span>
+      <div className={styles.textContainer}>
+        <h2 className={styles.headline}>
+          <span>That money</span><br/> <em>back feeling.</em>
+        </h2>
+        <p className={styles.subheadline}>
+          Smart platform that <span className={styles.italic}>rewards <br/>customers </span> with cashback for <br/>shopping at partnered stores.
         </p>
       </div>
-      <div className={styles.laptopBlock}>
-        <Image
+      <div className={styles.mockupContainer}>
+        <PhoneImage
           src="/Loyalty/iPhoneBlack.svg"
           alt="Rupee App Mockup"
-          className={styles.mockupImage}
-          width={300}
-          height={300}
+          variant="mockup"
           priority
         />
       </div>
