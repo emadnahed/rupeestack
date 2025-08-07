@@ -29,7 +29,7 @@ export const LoyaltySecureCoreSection: React.FC = () => {
               <span className={styles.AlbraMediumItalic55}>payouts.</span>
             </div>
             <div className={styles.payoutSubtext}>
-              <span className={styles.AlbraMediumItalic21}>Fast</span>, <span className={styles.AlbraMediumItalic21}>secure</span>, and <span className={styles.AlbraMediumItalic21}>scalable</span> payment<br />
+              <span className={styles.AlbraMediumItaliconehalfrem}>Fast</span>, <span className={styles.AlbraMediumItaliconehalfrem}>secure</span>, and <span className={styles.AlbraMediumItaliconehalfrem}>scalable</span> payment<br />
               solutions for businesses of <span className={styles.AlbraMediumItalic21}>all sizes.</span>
             </div>
           </div>
