@@ -34,21 +34,22 @@
   flex-direction: column;
   justify-content: center;
   max-width: 600px;
-  text-align: center;
+  text-align: left;
   padding: 0 1rem;
 }
 
 .headline {
   font-size: 2.25rem;
-  font-weight: 800;
+  font-weight: 400;
   margin-bottom: 1.5rem;
   line-height: 1.1;
   letter-spacing: -0.02em;
   color: var(--text-primary, #fff);
+  font-family: "Gilroy-Bold";
 }
 
 .headline em {
-  font-family: var(--font-albra), serif;
+  font-family: "Albra-Medium-Italic";
   font-style: italic;
   font-size: 2.25rem;
   font-weight: 700;
@@ -67,8 +68,8 @@
   font-family: var(--font-gilroy-medium), sans-serif;
   font-weight: 400;
   max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
+  
+  text-align: left;
 }
 
 .subheadline .italic {
@@ -82,46 +83,7 @@
   color: var(--text-primary, #fff);
 }
 
-@media (min-width: 768px) {
-  .payAppSection {
-    flex-direction: row;
-    gap: 3rem;
-    text-align: left;
-    padding: 2rem;
-    align-items: center;
-  }
-  
-  .textContainer {
-    text-align: left;
-    order: 2;
-    flex: 1;
-    max-width: none;
-    padding: 0;
-  }
-  
-  .mockupContainer {
-    order: 1;
-    flex: 0 0 auto;
-    max-width: 320px;
-    margin: 0;
-  }
-  
-  .headline {
-    font-size: 2.75rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  .headline em {
-    font-size: 2.75rem;
-  }
-  
-  .subheadline {
-    font-size: 1.125rem;
-    margin-left: 0;
-    margin-right: 0;
-    max-width: 480px;
-  }
-}
+
 
 @media (min-width: 1024px) {
   .payAppSection {
@@ -172,7 +134,145 @@
 }
 
 @media (max-width: 767px) {
+ 
+}
+
+
+
+
+/* Small phones */
+@media only screen and (max-width: 375px) {
+    
   .payAppSection {
-    margin-bottom: 9rem;
+    flex-direction: row;
+    gap: 3rem;
+    text-align: left;
+    padding: 2rem;    
+    align-items: center;
+    
   }
+  
+  .textContainer {
+    text-align: left;
+    order: 2;
+    flex: 1;
+    max-width: none;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .mockupContainer {
+    order: 1;
+    flex: 0 0 auto;
+    max-width: 150px;
+    margin: 0;
+  }
+  
+  .headline {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;    
+  }
+  
+  .headline em {
+    font-size: 2rem;
+  }
+  
+  .subheadline {
+    font-size: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 480px;
+  }
+  
+}
+
+/* Medium phones */
+@media only screen and (min-width: 376px) and (max-width: 599px) {
+  
+  .payAppSection {
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: center;
+    /* text-align: left; */
+    padding: 2rem;    
+    align-items: center;
+    
+  }
+  
+  .textContainer {
+    /* text-align: left; */    
+    order: 2;
+    flex: 1;    
+    padding: 0;
+    width: 100%;
+  }
+  
+  .mockupContainer {
+    order: 1;
+    flex: 0 0 auto;
+    max-width: 150px;
+    margin: 0;
+  }
+  
+  .headline {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;    
+  }
+  
+  .headline em {
+    font-size: 2rem;
+  }
+  
+  .subheadline {
+    font-size: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 480px;
+  }
+}
+
+/* Tablets */
+@media only screen and (min-width: 600px) and (max-width: 1050px) {
+  .payAppSection {
+    flex-direction: row;
+    gap: 10rem;
+    text-align: left;
+    padding: 2rem;    
+    align-items: center;
+    margin: 12rem auto;
+    
+  }
+  
+  .textContainer {
+    text-align: left;
+    order: 2;
+    flex: 1;
+    max-width: none;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .mockupContainer {
+    order: 1;
+    flex: 0 0 auto;
+    max-width: 290px;
+    margin: 0;
+  }
+  
+  .headline {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;    
+  }
+  
+  .headline em {
+    font-size: 3rem;
+  }
+  
+  .subheadline {
+    font-size: 1.2rem;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 480px;
+  }
+
 }
