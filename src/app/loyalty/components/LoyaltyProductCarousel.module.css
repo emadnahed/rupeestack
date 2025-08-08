@@ -1,143 +1,212 @@
 .carouselSection {
-  width: 100%;
-  background: var(--primary-black, #000);
-  color: var(--text-primary, #fff);
+  min-height: 100vh;
+  background: #000;
+  color: #fff;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  padding: 4rem 0 2rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 4rem 0 4rem 0;
+}
+
+.sectionTitle {
+  font: 600 2.5rem/1 'Gilroy Bold', system-ui, sans-serif;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.sectionTitle span {
+  display: block;
+  position: relative;
+  /* padding-bottom: 1rem; */
+}
+
+.sectionTitle span:first-child {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.sectionTitle span:last-child {
+  /* font: italic 500 3.4rem/1 'Albra Medium', system-ui, sans-serif; */
+  font-family: 'Albra Medium';
+  font-weight: 500;
+  font-style: italic;
+  font-size: 3.4rem;
+  line-height: 1;
+  letter-spacing: -2px;
+  margin-top: -0.5rem;
+}
+
+.carouselSection.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .carouselContainer {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
-  max-width: 1100px;
-  position: relative;
+  max-width: 1200px;
+  padding: 0 2rem;
+  margin: 0 auto;
+  gap: 2rem;
 }
 
-.arrowLeft, .arrowRight {
+.arrowButton {
   background: none;
-  border: 2px solid var(--text-primary, #fff);
-  color: var(--text-primary, #fff);
-  font-size: 2.5rem;
+  /* border: 1px solid #fff; */
+  border-radius: 50%;
   width: 48px;
   height: 48px;
-  border-radius: 50%;
-  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  z-index: 2;
-  transition: all 0.2s ease;
-  font-family: var(--font-gilroy), sans-serif;
+  /* cursor: pointer; */
+  padding: 0;
+  transition: background-color 0.2s ease;
 }
-.arrowLeft:hover, .arrowRight:hover {
-  background: rgba(255,255,255,0.08);
-  border-color: var(--loyalty-accent-hover, #b3e5fc);
-  color: var(--loyalty-accent-hover, #b3e5fc);
+
+.arrowButton:hover {
+  background: rgba(255, 255, 255, 0.1);
 }
+
+.arrowIcon {
+  width: 24px;
+  height: 24px;
+  color: #fff;
+}
+
 .arrowLeft {
-  margin-right: 1.5rem;
+  margin-right: 24px;
 }
 .arrowRight {
-  margin-left: 1.5rem;
+  margin-left: 24px;
 }
 
 .leftBlock, .rightBlock {
-  flex: 1 1 0;
+  flex: 1;
+  max-width: 300px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-width: 0;
-  max-width: 260px;
-  text-align: center;
-  margin: 0 1rem;
+  align-items: flex-start;
+  padding: 1rem;
+}
+
+.rightBlock {
+  align-items: flex-end;
+  text-align: right;
+  align-self: flex-end;  
+  margin-bottom: 152px;
 }
 
 .logo {
-  margin-bottom: 1.2rem;
-  max-width: 120px;
-  height: auto;
+  height: 40px;
+  width: auto;
+  margin-bottom: 1.5rem;
+  object-fit: contain;
 }
 
-.leftDesc, .rightDesc {
-  font-family: var(--font-gilroy), sans-serif;
-  font-size: 1.1rem;
-  margin-bottom: 1.2rem;
-  color: var(--text-secondary, rgba(255, 255, 255, 0.92));
-  line-height: 1.5;
+.description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 1.5rem;
 }
 
 .learnMore {
-  font-family: var(--font-gilroy), sans-serif;
-  font-size: 1.1rem;
-  color: var(--text-primary, #fff);
+  color: #fff;
   text-decoration: underline;
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 1rem;
   cursor: pointer;
-  margin-bottom: 0.5rem;
-  transition: color 0.2s ease;
-  font-weight: 500;
+  transition: opacity 0.2s ease;
 }
-.learnMore:hover, .learnMore:focus {
-  color: var(--loyalty-accent-hover, #b3e5fc);
+
+.learnMore:hover {
+  opacity: 0.8;
 }
 
 .centerBlock {
-  flex: 0 0 320px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 0;
+  flex: 0 0 auto;
+  padding: 0 2rem;
 }
 
 .personImg {
-  width: 220px;
+  width: 200px;
   height: auto;
-  max-height: 420px;
-  object-fit: contain;
   filter: grayscale(1);
 }
 
-@media (max-width: 900px) {
+.carouselSection.visible .personImg {
+  transform: translateY(0);
+}
+
+@media (max-width: 1024px) {
+  .carouselSection {
+    padding: 3rem 0 1rem;
+  }
+  
+  .sectionTitle {
+    font-size: 1.75rem;
+    margin-bottom: 3rem;
+  }
+  
+  .sectionTitle span {
+    padding-bottom: 0.75rem;
+  }
   .carouselContainer {
     flex-direction: column;
-    max-width: 98vw;
-    padding: 0 0.5rem;
+    align-items: center;
+    padding: 4rem 1rem;
   }
-  .arrowLeft, .arrowRight {
-    margin: 0 0 1.5rem 0;
-    font-size: 2rem;
-    width: 40px;
-    height: 40px;
-  }
-  .leftBlock, .rightBlock {
-    max-width: 100%;
-    margin: 0.5rem 0;
-  }
+
   .centerBlock {
-    flex: none;
-    margin: 1.5rem 0;
+    order: -1;
+    margin-bottom: 2rem;
   }
-  .personImg {
-    width: 140px;
-    max-height: 260px;
+
+  .leftBlock, .rightBlock {
+    text-align: center;
+    align-items: center;
+    max-width: 500px;
+    margin-bottom: 2rem;
+  }
+
+  .rightBlock {
+    text-align: center;
+  }
+
+  .arrowLeft, .arrowRight {
+    position: fixed;
+    bottom: 2rem;
+  }
+
+  .arrowLeft {
+    left: 2rem;
+  }
+
+  .arrowRight {
+    right: 2rem;
   }
 }
 
 @media (max-width: 600px) {
-  .carouselSection {
-    padding: 2rem 0 2rem 0;
+  .carouselContainer {
+    padding: 2rem 1rem;
   }
-  .leftDesc, .rightDesc, .learnMore {
-    font-size: 0.95rem;
-  }
+
   .personImg {
-    width: 90px;
-    max-height: 160px;
+    width: 150px;
   }
-} 
+
+  .arrowLeft, .arrowRight {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.25rem;
+  }
+}

@@ -30,14 +30,14 @@ export const LoyaltySecureCoreSection: React.FC = () => {
             </div>
             <div className={styles.payoutSubtext}>
               <span className={styles.AlbraMediumItaliconehalfrem}>Fast</span>, <span className={styles.AlbraMediumItaliconehalfrem}>secure</span>, and <span className={styles.AlbraMediumItaliconehalfrem}>scalable</span> payment<br />
-              solutions for businesses of <span className={styles.AlbraMediumItalic21}>all sizes.</span>
+              solutions for businesses of <span className={styles.AlbraMediumItaliconehalfrem}>all sizes.</span>
             </div>
           </div>
         </div>
       </div>
       <div className={styles.heroTextContainer}>
       <p className={styles.topLine}>
-        A fintech company reimagining <span className={styles.AlbraMediumItaliconehalfrem}>how people <br/>interact with money.</span>
+        A fintech company reimagining <span className={[styles.AlbraMediumItaliconehalfrem, styles.colorWhite].join(' ')}>how people <br/>interact with money.</span>
       </p>
       <p className={styles.bottomLine}>
         We build seamless, intuitive systems that simplify <br/>payments, rewards, and digital finance effortless, <br/>accessible, and future-ready.

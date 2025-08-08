@@ -1,9 +1,10 @@
+/* Font classes - preserved as requested */
 .GilroyBold400 {
   font-family: var(--font-gilroy-bold), sans-serif;
   font-weight: '400';
   font-size: 60px;
   line-height: 66px;
-  letter-spacing: -4px;
+  letter-spacing: -3px;
   text-align: center;
 }
 
@@ -22,31 +23,29 @@
   font-weight: 700;
   font-size: 55px;
   line-height: 49px;
-  letter-spacing: 0px;
+  letter-spacing: 0;
   text-align: center;
-
 }
 
 .AlbraMediumItalic55 {
-  /* font-family: var(--font-Albra-Medium), sans-serif; */
   font-family: 'Albra-Medium';
   font-weight: 600;
   font-style: italic;
   font-size: 55px;
   line-height: 49px;
-  letter-spacing: -0.8;
+  letter-spacing: -2px;
 }
 
 .AlbraMediumItaliconehalfrem {
-  /* font-family: var(--font-Albra-Medium), sans-serif; */
   font-family: 'Albra-Medium';
   font-weight: 600;
   font-style: italic;
   font-size: 1.5rem;
-  /* line-height: 49px; */
-  letter-spacing: -0.8;
-  color: rgba(255, 255, 255, 1);
+  letter-spacing: -0.8;  
+}
 
+.colorWhite {
+  color: white;
 }
 
 .AlbraMediumItalic21 {
@@ -55,7 +54,68 @@
   font-style: italic;
   font-size: 21px;
   line-height: 29px;
+}
+
+/* Layout styles */
+.secureCoreSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.headlineBlock {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.left, .right {
+  flex: 1;
+}
+
+.laptopImg {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+}
+
+.payoutBlock {
+  max-width: 500px;
+  margin-left: auto;
+}
+
+.payoutHeadline {
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
   letter-spacing: 0;
+}
+
+.payoutSubtext {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.heroTextContainer {
+  max-width: 800px;
+  margin: 3rem auto 0;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.topLine, .bottomLine {
+  margin: 0 0 1.5rem;
+  line-height: 1.6;
 }
 
 .GilroyRegular36 {
@@ -177,7 +237,7 @@
 
 .payoutSubtext {
   font-size: 1rem;
-  color: var(--text-secondary, rgba(255, 255, 255, 0.85));
+  color: var(--text-secondary, rgba(255, 255, 255, 1));
   font-family: var(--font-gilroy), sans-serif;
   margin-top: 0.5rem;
   text-align: left;
