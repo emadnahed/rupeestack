@@ -40,18 +40,19 @@
 
 .headline {
   font-size: 2.25rem;
-  font-weight: 800;
+  font-weight: 500;
   margin-bottom: 1.5rem;
   line-height: 1.1;
   letter-spacing: -0.02em;
+  font-family: "Gilroy";
   color: var(--text-primary, #fff);
 }
 
 .headline em {
-  font-family: var(--font-albra), serif;
+  font-family: "Albra Medium Italic";
   font-style: italic;
   font-size: 2.25rem;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 0;
 }
 
@@ -60,26 +61,24 @@
 }
 
 .subheadline {
-  font-size: 1rem;
-  color: var(--text-secondary, rgba(255, 255, 255, 0.45));
-  margin-top: 0;
-  line-height: 1.6;
-  font-family: var(--font-gilroy), sans-serif;
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
+  font-family: "Gilroy-Medium";
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2rem;
+  letter-spacing: 1px;
 }
 
-.subheadline .italic {
-  font-family: var(--font-albra), serif;
+.subheadline em {
+  font-family: 'Albra-Medium-Italic';
+  font-weight: 500;
   font-style: italic;
-  color: rgba(255, 255, 255, 1);
+  font-size: 21px;
+  
+  line-height: 29px;
+  letter-spacing: 0px;
 }
 
-.subheadline .bold {
-  font-weight: 700;
-  color: var(--text-primary, #fff);
-}
+
 
 @media (min-width: 768px) {
   .moneyBackSection {
@@ -173,5 +172,175 @@
 @media (max-width: 767px) {
   .moneyBackSection {
     margin-bottom: 9rem;
+  }
+}
+
+
+@media only screen and (max-width: 375px) {
+  .moneyBackSection {
+    margin-bottom: 9rem;
+    padding: 2rem;
+    /* flex-direction: column-reverse; */
+  }
+
+
+  .headline {
+    font-size: 1.95rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    font-family: "Gilroy";
+    color: var(--text-primary, #fff);
+    text-align: left;
+  }
+  
+  .headline em {
+    font-family: "Albra Medium Italic";
+    font-style: italic;
+    font-size: 1.95rem;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+
+  .subheadline {
+    font-family: "Gilroy-Medium";
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 2rem;
+    letter-spacing: 0px;
+    
+  }
+  
+  .subheadline em{
+    font-family: 'Albra-Medium-Italic';
+  font-weight: 500;
+  font-style: italic;
+  font-size: 1rem;
+  
+  line-height: 29px;
+  letter-spacing: 0px;
+  
+  }
+
+
+  .mockupContainer {
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 180px;
+    width: 100%;
+    aspect-ratio: 9 / 12.5;
+    /* iPhone 14 Pro proportions */
+    margin: 0 auto;
+  }
+
+}
+
+
+
+/* Medium phones */
+@media only screen and (min-width: 376px) and (max-width: 599px) {
+  .moneyBackSection {
+    margin-bottom: 9rem;
+  }
+
+  .mockupContainer {
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 180px;
+    width: 100%;
+    aspect-ratio: 9 / 12.5;
+    /* iPhone 14 Pro proportions */
+    margin: 0 auto;
+  }
+
+  .headline {
+    font-size: 2.25rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    font-family: "Gilroy";
+    color: var(--text-primary, #fff);
+    text-align: left;
+  }
+  
+  .headline em {
+    font-family: "Albra Medium Italic";
+    font-style: italic;
+    font-size: 2.25rem;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+
+  .subheadline {
+    font-family: "Gilroy-Medium";
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 2rem;
+    letter-spacing: 0px;
+    
+  }
+  
+  .subheadline em{
+    font-family: 'Albra-Medium-Italic';
+  font-weight: 500;
+  font-style: italic;
+  font-size: 1rem;
+  
+  line-height: 29px;
+  letter-spacing: 0px;
+  
+  }
+
+
+
+}
+
+/* Tablets */
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .moneyBackSection {
+    flex-direction: row;
+    gap: 3rem;
+    text-align: left;
+    padding: 2rem;
+    align-items: center;
+  }
+
+  .textContainer {
+    text-align: left;
+    order: 1;
+    flex: 1;
+    max-width: none;
+    padding: 0;
+  }
+
+  .mockupContainer {
+    order: 2;
+    flex: 0 0 auto;
+    max-width: 320px;
+    margin: 0;
+  }
+
+  .headline {
+    font-size: 2.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .headline em {
+    font-size: 2.75rem;
+  }
+
+  .subheadline {
+    font-size: 1.125rem;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 480px;
   }
 }

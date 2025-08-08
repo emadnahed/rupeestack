@@ -7,10 +7,10 @@ const LoyaltyMoneyBackSection: React.FC = () => {
     <section className={styles.moneyBackSection}>
       <div className={styles.textContainer}>
         <h2 className={styles.headline}>
-          <span>That money</span><br/> <em>back feeling.</em>
+          That money<br/> back <em>feeling.</em>
         </h2>
         <p className={styles.subheadline}>
-          Smart platform that <span className={styles.italic}>rewards <br/>customers </span> with cashback for <br/>shopping at partnered stores.
+          Smart platform that <em> rewards <br/>customers</em> with <em>cashback</em> for <br/>shopping at <em>partnered stores.</em>
         </p>
       </div>
       <div className={styles.mockupContainer}>
