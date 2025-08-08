@@ -185,7 +185,16 @@ const LoyaltyProductCarousel: React.FC<LoyaltyProductCarouselProps> = ({ title =
           <a href={slide.left.learnMore} className={styles.learnMore} tabIndex={0}>Learn more</a>
         </div>
         <div className={styles.centerBlock}>
-          <Image src={slide.center.image} alt={slide.center.alt} width={220} height={420} className={styles.personImg} />
+          <div className={styles.personImgContainer}>
+            <Image 
+              src={slide.center.image} 
+              alt={slide.center.alt} 
+              width={220} 
+              height={420} 
+              className={styles.personImg} 
+              priority
+            />
+          </div>
         </div>
         <div className={styles.rightBlock}>
           <Image src={slide.right.logo} alt={slide.right.alt} width={120} height={40} className={styles.logo} />

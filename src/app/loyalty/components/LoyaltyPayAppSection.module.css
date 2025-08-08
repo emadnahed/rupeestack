@@ -1,11 +1,11 @@
 .payAppSection {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   color: var(--text-primary, #fff);
   padding: 2rem 1rem;
-  gap: 2rem;
+  gap: 4rem;
   text-align: center;
   width: 100%;
   min-height: 100vh;
@@ -61,11 +61,11 @@
 
 .subheadline {
   font-size: 1rem;
-  color: var(--text-secondary, rgba(255, 255, 255, 0.45));
+  color: var(--text-secondary, rgba(255, 255, 255, 1));
   margin-top: 0;
   line-height: 1.6;
-  font-family: var(--font-gilroy-bold), sans-serif;
-  font-weight: 700;
+  font-family: var(--font-gilroy-medium), sans-serif;
+  font-weight: 400;
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
@@ -77,8 +77,8 @@
   color: rgba(255, 255, 255, 1);
 }
 
-.subheadline .bold {
-  font-weight: 700;
+.subheadline .bold {  
+  font-weight: '400';
   color: var(--text-primary, #fff);
 }
 
@@ -125,7 +125,7 @@
 
 @media (min-width: 1024px) {
   .payAppSection {
-    gap: 4rem;
+    gap: 14rem;
     padding: 3rem;
   }
   
@@ -150,7 +150,7 @@
 
 @media (min-width: 1200px) {
   .payAppSection {
-    gap: 6rem;
+    gap: 26rem;
     padding: 4rem;
   }
   

@@ -15,7 +15,7 @@ const LoyaltyHeroSection: React.FC = () => {
         <h1 className={styles.title}>
           Your Money,
         </h1>
-        <h1 className={styles.maximizedText}>
+        <h1 className={styles.Albra600Mediumitalic}>
           Maximized.
         </h1>
         <p className={styles.description}>

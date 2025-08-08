@@ -36,13 +36,13 @@ export const LoyaltySecureCoreSection: React.FC = () => {
         </div>
       </div>
       <div className={styles.heroTextContainer}>
-      <p className={styles.topLine}>
-        A fintech company reimagining <span className={[styles.AlbraMediumItaliconehalfrem, styles.colorWhite].join(' ')}>how people <br/>interact with money.</span>
-      </p>
-      <p className={styles.bottomLine}>
-        We build seamless, intuitive systems that simplify <br/>payments, rewards, and digital finance effortless, <br/>accessible, and future-ready.
-      </p>
-    </div>
+        <p className={styles.topLine}>
+          A fintech company reimagining <span className={[styles.AlbraMediumItaliconehalfrem, styles.colorWhite].join(' ')}>how people <br />interact with money.</span>
+        </p>
+        <p className={styles.bottomLine}>
+          We build seamless, intuitive systems that simplify <br />payments, rewards, and digital finance effortless, <br />accessible, and future-ready.
+        </p>
+      </div>
     </section>
   );
 };
