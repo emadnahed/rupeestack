@@ -214,18 +214,133 @@
   }
 }
 
-@media (max-width: 600px) {
-  .carouselContainer {
-    padding: 2rem 1rem;
-  }
 
-  .personImg {
-    width: 150px;
-  }
 
-  .arrowLeft, .arrowRight {
-    width: 2.5rem;
-    height: 2.5rem;
+
+
+@media only screen and (max-width: 375px) {
+  .carouselSection {
+    min-height: 100vh;
+    padding: 1rem 0.5rem;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sectionTitle {
     font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
   }
+  
+  .sectionTitle span:last-child {
+    font-family: 'Albra Medium';
+    font-size: 1.5rem;
+    font-style: italic;
+    letter-spacing: -0.5px;
+    margin-top: 0.25rem;
+    display: block;
+  }
+  
+  .carouselContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .leftBlock, .rightBlock, .centerBlock {
+    flex: 0 0 85%;
+    scroll-snap-align: center;
+    padding: 1rem;
+    margin: 0 0.25rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 400px;
+  }
+  
+  .centerBlock {
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .personImgContainer {
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .personImg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .logo {
+    height: 32px;
+    width: auto;
+    max-width: 120px;
+    margin: 0 auto 0.75rem;
+    object-fit: contain;
+  }
+  
+  .leftDesc, .rightDesc {
+    font-size: 0.8rem;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0.5rem 0;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 400;
+  }
+  
+  .learnMore {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+    margin-top: 0.75rem;
+  }
+  
+  .learnMore::after {
+    content: '→';
+    display: inline-block;
+    transition: transform 0.2s ease;
+    font-size: 0.9rem;
+  }
+  
+  .learnMore:hover::after {
+    transform: translateX(4px);
+  }
+  
+  /* Hide arrows on mobile since we'll use swipe */
+  .arrowButton {
+    display: none;
+  }
+}
+
+/* Medium phones */
+@media only screen and (min-width: 376px) and (max-width: 599px) {
+  /* styles... */
+}
+
+/* Tablets */
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  /* styles... */
 }

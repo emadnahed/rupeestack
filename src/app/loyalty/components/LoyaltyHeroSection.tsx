@@ -10,12 +10,12 @@ const GalaxyBackground = dynamic(
 const LoyaltyHeroSection: React.FC = () => {
   return (
     <section className={styles.heroSection}>
-      {/* <GalaxyBackground /> */}
+      <GalaxyBackground />
       <div className={styles.heroCenterContent}>
         <h1 className={styles.title}>
           Your Money,
         </h1>
-        <h1 className={styles.Albra600Mediumitalic}>
+        <h1 className={styles.AlbraSemiItalicHeading}>
           Maximized.
         </h1>
         <p className={styles.description}>
