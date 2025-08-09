@@ -17,7 +17,7 @@ const LoyaltyPayAppSection: React.FC = () => {
         {/* <h2 className={styles.headline}><em>Pay app</em> <span>that <br/><strong>doesn’t sleep.</strong></span></h2> */}
         <h2 className={styles.headline}><em>Pay app</em> that <br/>doesn’t sleep.</h2>
         <p className={styles.subheadline}>
-        <span className={styles.italic}>Zero</span> fees. <span className={styles.italic}>Zero</span> failures. <span className={styles.italic}>Zero</span><br/> headaches. <span className={styles.bold}>Paymadi</span> is the <br/> payment app India deserves.
+        <span className={styles.italic}>Zero</span> fees. <span className={styles.italic}>Zero</span> failures. <span className={styles.italic}>Zero</span><br/> headaches. <span className={styles.italic}>Paymadi</span> is the <br/> payment app India deserves.
         </p>
       </div>
     </section>

@@ -39,33 +39,31 @@
 }
 
 .headline {
-  font-size: 2.25rem;
-  font-weight: 400;
+  font-family: "Gilroy";
+  font-size: 4rem;
+  font-weight: 700;
   margin-bottom: 1.5rem;
   line-height: 1.1;
-  letter-spacing: -0.02em;
-  color: var(--text-primary, #fff);
-  font-family: "Gilroy-Bold";
+  letter-spacing: -0.02em;  
 }
 
 .headline em {
   font-family: "Albra-Medium-Italic";
   font-style: italic;
-  font-size: 2.25rem;
+  font-size: 4rem;
   font-weight: 700;
   letter-spacing: 0;
 }
 
-.headline strong {
-  font-weight: 800;
-}
+
 
 .subheadline {
   font-size: 1rem;
   color: var(--text-secondary, rgba(255, 255, 255, 1));
   margin-top: 0;
   line-height: 1.6;
-  font-family: var(--font-gilroy-medium), sans-serif;
+  /* font-family: var(--font-gilroy-medium), sans-serif; */
+  font-family: 'Gilroy-Medium';
   font-weight: 400;
   max-width: 500px;
   
@@ -73,42 +71,21 @@
 }
 
 .subheadline .italic {
-  font-family: var(--font-albra), serif;
+  font-family: 'Albra-Medium';
   font-style: italic;
+  font-weight: 500;
   color: rgba(255, 255, 255, 1);
 }
 
 .subheadline .bold {  
   font-weight: '400';
-  color: var(--text-primary, #fff);
+  background: rgba(255, 255, 255, 1);
+
 }
 
 
 
-@media (min-width: 1024px) {
-  .payAppSection {
-    gap: 14rem;
-    padding: 3rem;
-  }
-  
-  .headline {
-    font-size: 3.25rem;
-    margin-bottom: 2rem;
-  }
-  
-  .headline em {
-    font-size: 3.25rem;
-  }
-  
-  .subheadline {
-    font-size: 1.25rem;
-    max-width: 520px;
-  }
-  
-  .mockupContainer {
-    max-width: 380px;
-  }
-}
+
 
 @media (min-width: 1200px) {
   .payAppSection {

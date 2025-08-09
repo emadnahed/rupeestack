@@ -70,7 +70,7 @@
 .description {   
   color: rgba(255, 255, 255, 0.5);
   text-align: center;
-  font-size: 1.15rem; /* Desktop size */
+  font-size: 1.25rem; /* Desktop size */
   max-width: 700px;
   margin: 0 auto;
   line-height: 1.6;

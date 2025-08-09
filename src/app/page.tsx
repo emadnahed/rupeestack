@@ -21,9 +21,6 @@ export default function Home() {
       <LoyaltyMoneyBackSection />
       <LoyaltySecureCoreSection />      
       <LoyaltyProductCarousel />
-      <div style={{
-        margin: '288px 0'
-      }}></div>
       <Footer />
     </div>
   );
