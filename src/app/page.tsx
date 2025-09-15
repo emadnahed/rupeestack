@@ -12,7 +12,7 @@ import HeroTextBlock from './loyalty/components/HeroTextBlock';
 import LoyaltyProductCarousel from './loyalty/components/LoyaltyProductCarousel';
 
 export default function Home() {
-  console.log("Testing")
+
   return (
     <div className={styles.page}>
       <Header />      
