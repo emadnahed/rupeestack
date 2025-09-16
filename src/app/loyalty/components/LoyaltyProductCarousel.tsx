@@ -38,6 +38,7 @@ const RightArrow: React.FC<ArrowProps> = ({ className }) => (
 
 const slides = [
   {
+    category: 'Consumers',
     left: {
       logo: '/Loyalty/PaymadiLogo.svg',
       alt: 'Paymadi Logo',
@@ -58,6 +59,7 @@ const slides = [
     },
   },
   {
+    category: 'Merchants',
     left: {
       logo: '/RupeeStackCarousel/RupeeGate.svg',
       alt: 'RupeeGate Logo',
@@ -78,6 +80,7 @@ const slides = [
     },
   },
   {
+    category: 'Corporates',
     left: {
       logo: '/RupeeStackCarousel/RupeeGate.svg',
       alt: 'RupeeGate Logo',
@@ -172,7 +175,7 @@ const LoyaltyProductCarousel: React.FC<LoyaltyProductCarouselProps> = ({ title =
       {title && (
         <h2 className={styles.sectionTitle}>
           <span>Products for</span>
-          <span className={styles.AlbraMediumItalic55}>consumers.</span>
+          <span className={styles.AlbraMediumItalic55}>{slide.category}.</span>
         </h2>
       )}
       <div className={styles.carouselContainer} {...handlers} aria-live="polite" data-inview={inView}>

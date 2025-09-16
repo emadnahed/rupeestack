@@ -394,7 +394,9 @@
 @media only screen and (min-width: 390px) and (max-width: 767px) {
   .secureCoreSection {
     /* padding: 12rem 0.5rem; */
-    padding: 45% 1%;
+    /* padding: 45% 1%; */
+    margin-bottom: 550px;
+    
   }
   
   .headlineBlock {
