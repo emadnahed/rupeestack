@@ -58,20 +58,18 @@
 
 
 .subheadline {
-  font-size: 1rem;
+  font-size: 2.5rem;
   color: var(--text-secondary, rgba(255, 255, 255, 1));
   margin-top: 0;
   line-height: 1.6;
-  /* font-family: var(--font-gilroy-medium), sans-serif; */
-  font-family: 'Gilroy-Medium';
+  font-family: var(--font-gilroy-medium), sans-serif;  
   font-weight: 400;
   max-width: 500px;
-  
   text-align: left;
 }
 
 .subheadline .italic {
-  font-family: 'Albra-Medium';
+  font-family: var(--font-Albra-Medium-Italic), serif;
   font-style: italic;
   font-weight: 500;
   color: rgba(255, 255, 255, 1);
@@ -102,7 +100,7 @@
   }
   
   .subheadline {
-    font-size: 1.375rem;
+    font-size: 1.5rem;
   }
   
   .mockupContainer {
