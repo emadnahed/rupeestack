@@ -2,7 +2,7 @@
   min-height: 100vh;
   background: #000;
   color: #fff;
-  padding:8rem 0 4rem;
+  padding: 8rem 0 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,22 +13,23 @@
   /* font: 600 2.5rem/1 'Gilroy Bold', system-ui, sans-serif;
   color: #fff;
   /* text-align: center; */
-    margin-bottom: 5%;   
-    font-family: var(--font-gilroy-bold), sans-serif;
-    font-weight: 600;
-    font-size: 55px;
-    line-height: 45px;
-    letter-spacing: 0px;
-    text-align: center;
-  
+  margin-bottom: 5%;
+  font-family: var(--font-gilroy-bold), sans-serif;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 45px;
+  letter-spacing: -2px;
+  text-align: center;
+
 }
 
 .AlbraMediumItalic55 {
-  font-family: 'Albra-Medium';
-  font-weight: 600;
+  /* font-family: 'Albra', sans-serif; */
+  font-family: var(--font-albra-medium-italic), sans-serif;
+  font-weight: 500;
   font-style: italic;
-  font-size: 55px;
-  line-height: 49px;  
+  font-size: 5px;
+  line-height: 49px;
 }
 
 .sectionTitle span {
@@ -43,14 +44,14 @@
 }
 
 .sectionTitle span:last-child {
-  /* font: italic 500 3.4rem/1 'Albra Medium', system-ui, sans-serif; */
-  font-family: 'Albra Medium';
+  font-family: 'Albra';
+  font-style: Medium Italic;
   font-weight: 500;
-  font-style: italic;
-  font-size: 65px;
-  line-height: 1;
-  letter-spacing: -2px;
-  margin-top: -0.5rem;
+  font-size: 55px;
+  line-height: 45px;
+  letter-spacing: -1px;
+  text-align: center;
+
 }
 
 .carouselSection.visible {
@@ -97,11 +98,13 @@
 .arrowLeft {
   margin-right: 24px;
 }
+
 .arrowRight {
   margin-left: 24px;
 }
 
-.leftBlock, .rightBlock {
+.leftBlock,
+.rightBlock {
   flex: 1;
   max-width: 300px;
   display: flex;
@@ -113,7 +116,7 @@
 .rightBlock {
   align-items: flex-end;
   text-align: right;
-  align-self: flex-end;  
+  align-self: flex-end;
   margin-bottom: 152px;
 }
 
@@ -156,8 +159,10 @@
 }
 
 .personImgContainer {
-  width: 260px; /* Fixed width */
-  height: 800px; /* Fixed height */
+  width: 260px;
+  /* Fixed width */
+  height: 800px;
+  /* Fixed height */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -182,15 +187,16 @@
   .carouselSection {
     padding: 3rem 0 1rem;
   }
-  
+
   .sectionTitle {
     font-size: 1.75rem;
     margin-bottom: 3rem;
   }
-  
+
   .sectionTitle span {
     padding-bottom: 0.75rem;
   }
+
   .carouselContainer {
     flex-direction: column;
     align-items: center;
@@ -202,7 +208,8 @@
     margin-bottom: 2rem;
   }
 
-  .leftBlock, .rightBlock {
+  .leftBlock,
+  .rightBlock {
     text-align: center;
     align-items: center;
     max-width: 500px;
@@ -213,7 +220,8 @@
     text-align: center;
   }
 
-  .arrowLeft, .arrowRight {
+  .arrowLeft,
+  .arrowRight {
     position: fixed;
     bottom: 2rem;
   }
@@ -239,13 +247,13 @@
     display: flex;
     flex-direction: column;
   }
-  
+
   .sectionTitle {
     font-size: 1.25rem;
     margin-bottom: 1.5rem;
     text-align: center;
   }
-  
+
   .sectionTitle span:last-child {
     font-family: 'Albra Medium';
     font-size: 1.5rem;
@@ -254,7 +262,7 @@
     margin-top: 0.25rem;
     display: block;
   }
-  
+
   .carouselContainer {
     display: flex;
     flex-direction: row;
@@ -268,8 +276,10 @@
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: x mandatory;
   }
-  
-  .leftBlock, .rightBlock, .centerBlock {
+
+  .leftBlock,
+  .rightBlock,
+  .centerBlock {
     flex: 0 0 85%;
     scroll-snap-align: center;
     padding: 1rem;
@@ -281,12 +291,12 @@
     justify-content: center;
     min-height: 400px;
   }
-  
+
   .centerBlock {
     align-items: center;
     justify-content: center;
   }
-  
+
   .personImgContainer {
     width: 100%;
     height: 300px;
@@ -295,13 +305,13 @@
     align-items: center;
     justify-content: center;
   }
-  
+
   .personImg {
     width: 100%;
     height: 100%;
     object-fit: contain;
   }
-  
+
   .logo {
     height: 32px;
     width: auto;
@@ -309,8 +319,9 @@
     margin: 0 auto 0.75rem;
     object-fit: contain;
   }
-  
-  .leftDesc, .rightDesc {
+
+  .leftDesc,
+  .rightDesc {
     font-size: 0.8rem;
     line-height: 1.4;
     color: rgba(255, 255, 255, 0.9);
@@ -318,7 +329,7 @@
     font-family: 'Gilroy', sans-serif;
     font-weight: 400;
   }
-  
+
   .learnMore {
     font-size: 0.8rem;
     font-weight: 500;
@@ -330,18 +341,18 @@
     gap: 0.25rem;
     margin-top: 0.75rem;
   }
-  
+
   .learnMore::after {
     content: '→';
     display: inline-block;
     transition: transform 0.2s ease;
     font-size: 0.9rem;
   }
-  
+
   .learnMore:hover::after {
     transform: translateX(4px);
   }
-  
+
   /* Hide arrows on mobile since we'll use swipe */
   .arrowButton {
     display: none;
@@ -360,11 +371,12 @@
     align-items: center;
     justify-content: center;
   }
+
   .carouselSection {
     min-height: 15%;
-    background: #000;    
+    background: #000;
     color: #fff;
-    padding:8rem 0 4rem;
+    padding: 8rem 0 4rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -373,40 +385,40 @@
 
 
 
-  
+
   .sectionTitle {
     /* font: 600 2.5rem/1 'Gilroy Bold', system-ui, sans-serif;
     color: #fff;
     /* text-align: center; */
-      /* margin-bottom: 5%;    */
-      font-family: var(--font-gilroy-bold), sans-serif;
-      font-weight: 600;
-      font-size: 29px;
-      line-height: 24px;
-      letter-spacing: 0px;
-      text-align: center;
-    
-  }
-  
-  .AlbraMediumItalic55 {
-    font-family: 'Albra-Medium';
+    /* margin-bottom: 5%;    */
+    font-family: var(--font-gilroy-bold), sans-serif;
     font-weight: 600;
-    font-style: italic;
     font-size: 29px;
-    line-height: 24px;  
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: center;
+
   }
-  
+
+  .AlbraMediumItalic55 {
+    font-family: 'Albra', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 5px;
+    line-height: 24px;
+  }
+
   .sectionTitle span {
     display: block;
     position: relative;
     /* padding-bottom: 1rem; */
   }
-  
+
   .sectionTitle span:first-child {
     font-weight: 700;
     letter-spacing: 0px;
   }
-  
+
   .sectionTitle span:last-child {
     /* font: italic 500 3.4rem/1 'Albra Medium', system-ui, sans-serif; */
     font-family: 'Albra Medium';
@@ -417,12 +429,12 @@
     letter-spacing: -1px;
     margin-top: -0.2rem;
   }
-  
+
   .carouselSection.visible {
     opacity: 1;
     transform: translateY(0);
   }
-  
+
   .carouselContainer {
     display: flex;
     align-items: center;
@@ -433,7 +445,7 @@
     margin: 0 auto;
     gap: 1rem;
   }
-  
+
   .arrowButton {
     background: none;
     /* border: 1px solid #fff; */
@@ -448,25 +460,27 @@
     transition: background-color 0.2s ease;
     outline: none;
   }
-  
+
   .arrowButton:hover {
     background: rgba(255, 255, 255, 0.1);
   }
-  
+
   .arrowIcon {
     width: 12px;
     height: 12px;
     color: #fff;
   }
-  
+
   .arrowLeft {
     margin-right: 12px;
   }
+
   .arrowRight {
     margin-left: 12px;
   }
-  
-  .leftBlock, .rightBlock {
+
+  .leftBlock,
+  .rightBlock {
     flex: 1;
     max-width: 100px;
     display: flex;
@@ -474,28 +488,28 @@
     align-items: flex-start;
     padding: 1rem;
   }
-  
+
   .rightBlock {
     align-items: flex-end;
     text-align: right;
-    align-self: flex-end;  
+    align-self: flex-end;
     margin-bottom: 1rem;
   }
-  
+
   .logo {
     height: 16px;
     width: auto;
     margin-bottom: 1rem;
     object-fit: contain;
   }
-  
+
   .description {
     font-size: 1rem;
     line-height: 1.6;
     color: rgba(255, 255, 255, 0.9);
     margin-bottom: 1rem;
   }
-  
+
   .learnMore {
     color: #fff;
     text-decoration: underline;
@@ -506,11 +520,11 @@
     cursor: pointer;
     transition: opacity 0.2s ease;
   }
-  
+
   .learnMore:hover {
     opacity: 0.8;
   }
-  
+
   .centerBlock {
     flex: 2;
     display: flex;
@@ -519,9 +533,9 @@
     padding: 0 2rem;
     height: 100%;
   }
-  
 
-  
+
+
   .personImg {
     max-width: 100%;
     max-height: 100%;
@@ -531,7 +545,7 @@
     transition: transform 0.3s ease;
     will-change: transform;
   }
-  
+
   .carouselSection.visible .personImg {
     transform: translateY(0);
   }
