@@ -10,6 +10,13 @@
   z-index: 1002;
 }
 
+/* Hide header when overlay menu is open */
+.headerHidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 .nav {
   display: flex;
   align-items: center;
@@ -124,24 +131,22 @@
   left: 0;
   width: 100%;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.85);
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
-  z-index: 1001;
+  background: #000;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  z-index: 1100;
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease-in-out;
-  transform: translateX(100%);
   padding: 0;
 }
 
 .navMenu.menuActive {
   opacity: 1;
   visibility: visible;
-  transform: translateX(0);
 }
 
 .closeButton {
@@ -173,137 +178,107 @@
   transition: transform 0.2s ease;
 }
 
-.navMenuContent {
-  width: 80%;
-  max-width: 320px;
+/* Overlay content wrapper */
+.overlayContent {
+  position: relative;
+  width: 100%;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.95);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  padding: 120px 30px 30px;
-  overflow-y: auto;
-  box-shadow: -5px 0 25px rgba(0, 0, 0, 0.3);
-  border-left: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.navMenuNav {
+  padding: 24px 24px 40px;
   display: flex;
   flex-direction: column;
-  gap: 25px;
-  align-items: flex-start;
-  width: 100%;
 }
 
-.glassContainer {
+.overlayHeader {
   display: flex;
-  gap: 12px;
-  padding: 12px;
-  flex-wrap: wrap;
-  position: relative;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
-  border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  align-items: center;
+  justify-content: space-between;
 }
 
-.waterBubble {
-  display: inline-block;
-  margin: 0 6px;
-  padding: 14px 28px;
-  background: linear-gradient(135deg, 
-    rgba(255, 255, 255, 0.15) 0%,
-    rgba(255, 255, 255, 0.08) 50%,
-    rgba(255, 255, 255, 0.03) 100%
-  );
-  backdrop-filter: blur(30px) saturate(200%) brightness(140%);
-  -webkit-backdrop-filter: blur(30px) saturate(200%) brightness(140%);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 50px;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 
-    0 6px 20px rgba(0, 0, 0, 0.15),
-    inset 0 1px 0 rgba(255, 255, 255, 0.3),
-    inset 0 -1px 0 rgba(0, 0, 0, 0.05);
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  animation: bubbleFloat 4s ease-in-out infinite;
-  animation-delay: calc(var(--index) * 0.3s);
-  will-change: transform, box-shadow, backdrop-filter;
+.overlayLogo {
+  display: inline-flex;
+  align-items: center;
 }
 
-.waterBubble::before {
-  content: '';
-  position: absolute;
-  top: 8px;
-  left: 12px;
-  width: 20px;
-  height: 15px;
-  background: radial-gradient(ellipse at center,
-    rgba(255, 255, 255, 0.7) 0%,
-    rgba(255, 255, 255, 0.2) 60%,
-    transparent 100%
-  );
-  border-radius: 50%;
-  filter: blur(0.5px);
-  pointer-events: none;
-  z-index: 1;
-}
-
-.waterBubble:hover {
-  transform: translateY(-1px) scale(1.02);
-  background: linear-gradient(135deg, 
-    rgba(255, 255, 255, 0.25) 0%,
-    rgba(255, 255, 255, 0.15) 50%,
-    rgba(255, 255, 255, 0.08) 100%
-  );
-  backdrop-filter: blur(40px) saturate(200%) brightness(150%);
-  box-shadow: 
-    0 8px 30px rgba(0, 0, 0, 0.2),
-    inset 0 1px 0 rgba(255, 255, 255, 0.4),
-    inset 0 -1px 0 rgba(255, 255, 255, 0.1);
-}
-
-@keyframes bubbleFloat {
-  0%, 100% { 
-    transform: translateY(0px) scale(1); 
-  }
-  50% { 
-    transform: translateY(-3px) scale(1.01); 
-  }
-}
-
-.navLink {
+.overlayClose {
   color: #fff;
-  font-size: 28px;
-  font-weight: 500;
-  text-decoration: none;
-  transition: all 0.3s ease-in-out;
-  position: relative;
-  display: block;
-  padding: 0;
-  margin: 0;
-  font-family: 'Gilroy', sans-serif;
-  z-index: 2;
-  position: relative;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-.navLink::after {
-  content: '';
-  position: absolute;
-  bottom: 5px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: #fff;
-  transition: width 0.3s ease-in-out;
-}
-
-.navLink:hover::after,
-.navLink.activeLink::after {
+.overlayNav {
+  margin-top: 32px;
   width: 100%;
+}
+
+.overlayList {
+  list-style: none;
+  margin: 0;
+  padding: 0 8px;
+}
+
+.overlayItem {
+  width: 100%;
+}
+
+.itemHeader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 0;
+  color: #fff;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.itemTitle {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: 'Gilroy', sans-serif;
+}
+
+.chevron {
+  color: #fff;
+  font-size: 18px;
+  transition: transform 0.2s ease;
+}
+
+.chevronOpen {
+  transform: rotate(180deg);
+}
+
+.divider {
+  height: 1px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.subListWrapper {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.25s ease;
+}
+
+.subOpen {
+  max-height: 240px; /* enough for a few items */
+}
+
+.subList {
+  list-style: none;
+  margin: 0 0 12px 0;
+  padding: 0 0 0 2px;
+}
+
+.subLink {
+  display: inline-block;
+  color: #dcdcdc;
+  text-decoration: none;
+  padding: 8px 0;
+  font-size: 16px;
+  transition: color 0.2s ease;
+}
+
+.subLink:hover {
+  color: #fff;
 }
 
 .activeLink {
